@@ -1,2 +1,2 @@
 // HTML5 autofocus plugin, Copyright (c) 2009, Mike Taylor, http://miketaylr.com, MIT licensed
-(function($){$.fn.autofocus=function(){if(typeof $(this)[0].autofocus==="undefined"){return $(this).focus();}else{return this;}};})(jQuery);
+(function($){$.fn.autofocus=function(){if(typeof this.autofocus==="undefined"){return this.focus();}else{return this;}};})(jQuery);
