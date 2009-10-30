@@ -11,7 +11,7 @@
 (function($) {
   $.fn.autofocus = function() {
     //Test to see if autofocus is natively supported before proceeding
-    if (typeof this.autofocus === 'undefined'){
+    if (typeof this[0].autofocus === 'undefined'){
         return this.focus();	
     } else {
       //Return if the autofocus property is supported
