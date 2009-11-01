@@ -6,7 +6,8 @@
 // autofocus attribute, hence no .each()
 // http://www.whatwg.org/specs/web-apps/current-work/multipage/association-of-controls-and-forms.html#autofocusing-a-form-control
 
-// USAGE: $('[autofocus]').autofocus();
+// USAGE: $('[autofocus=""]').autofocus();, assuming a boolean attribute like:
+// <input type="text" autofocus />
 
 (function($) {
   $.fn.autofocus = function() {
